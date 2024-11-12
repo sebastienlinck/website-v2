@@ -1,0 +1,48 @@
+.svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.svg-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 3vh;
+}
+.svg-item img {
+  max-width: 50%;
+  max-height: 50%;
+}
+.delete-btn,
+.edit-svg-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.edit-svg-icon {
+  top: 35px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+
+
+
+
+

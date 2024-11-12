@@ -1,0 +1,17 @@
+.container{
+    min-width: 80dvw;
+    max-width: 80dvw;
+    min-height: 40dvh;
+    max-height: 40dvh;
+
+}
+#map {
+    margin-top: 10vh;
+    margin-left: 25%;
+    height: 400px;
+    width: 50%;
+  }
+
+  .leaflet-marker-icon {
+    filter: none;
+  }

@@ -1,0 +1,106 @@
+.modal {
+  position: fixed;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(107, 94, 94, 0.8);
+}
+.modal-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 50%;
+}
+.modal img {
+  width: 50px;
+  height: 50px;
+  transition: scale 0.3s ease-in-out;
+}
+.modal input[type="image"] {
+  max-width: 50px;
+  max-height: 50px;
+  background: url(../img/add.svg) no-repeat;
+  transition: scale 0.3s ease-in-out;
+}
+.modal img:hover,
+.modal input[type="image"]:hover {
+  scale: 1.1;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*Style pour input des pages */
+.modal input[type="text"] {
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+}
+
+/*Style modal avec overlay pour la page SVG ajout / edit*/
+.modalSvg,
+.modalEditSvg {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.modalSvg.active,
+.modalEditSvg.active {
+  display: block;
+  opacity: 1;
+}
+.overlay,
+.overlayEdit {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.overlay.active,
+.overlayEdit.active {
+  display: block;
+}
+.modalSvg .modal-item,
+.modalEditSvg .modal-item {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  min-height: 20%;
+  max-height: 50%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 1rem 1rem;
+  background-color: #fff;
+}
+
+.modalSvg form,
+.modalEditSvg form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.small {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+

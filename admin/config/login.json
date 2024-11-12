@@ -1,0 +1,16 @@
+{
+    "username": "a",
+    "password": "$2y$10$49GuAn0TRU9ospZOxwr2FuMyCUioWeAPtTp7RwN7lbb\/GfO.KVfOi",
+    "nom": "ab",
+    "prenom": "ab",
+    "email": "a@ab",
+    "adresse": "279 avenue de la r\u00e9publique",
+    "code_postal": "59282",
+    "ville": "douchy-les-mines",
+    "pays": "France",
+    "tel": "0622747465",
+    "twitter": false,
+    "facebook": false,
+    "instagram": "juste_un_cliche",
+    "linkedin": false
+}
